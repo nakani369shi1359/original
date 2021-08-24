@@ -1,0 +1,39 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+h1{
+  font-size: 30px;
+}
+/* 最小幅が780pxになるまでは，font-size　300px */
+/* 780px→ブレイクポイント */
+@media screen and (min-width:768x){
+  h1{
+    font-size: 300px;
+  }
+}
+
+h2{
+  font-size: 200px;
+  background-color: aqua;
+
+}
+
+@media screen and (max-width:768px){
+  h2{
+    font-size: 20px;
+    color: red;
+    /* background-color: aqua; */
+    background-color: unset;
+  }
+  
+}
